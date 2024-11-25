@@ -7,8 +7,7 @@
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap"
         rel="stylesheet" />
     <title>Weather Forecast App</title>
 </head>
@@ -21,45 +20,70 @@
                 <button type="submit" class="search-button">Search</button>
             </form>
         </header>
-    </div>
-    <main>
-        <div class="current-weather">
-            <div>
-                <h1 class="current-city" id="city">Berlin</h1>
-                <p class="current-weather-details">
-                    <span id="time">Thursday 10.21</span>,
-                    <span id="description">Partly Cloudy</span>
-                    <br>
-                    Humidity: <strong id="humidity-details">94%</strong>,
-                    Wind: <strong id="speed-details">15km/h</strong>
-                </p>
+
+        <main>
+            <div class="current-weather">
+                <div>
+                    <h1 class="current-city" id="city">Berlin</h1>
+                    <p class="current-weather-details">
+                        <span id="time">Thursday 10:21</span>,
+                        <span id="description">Partly Cloudy</span>
+                        <br>
+                        Humidity: <strong id="humidity-details">94%</strong>,
+                        Wind: <strong id="speed-details">15 km/h</strong>
+                    </p>
+                </div>
+                <div class="current-temperature">
+                    <div id="icon" class="weather-icon">
+                        <img src="https://openweathermap.org/img/wn/04d@2x.png" alt="cloudy">
+                    </div>
+                    <div class="current-temperature-value" id="temperature">22</div>
+                    <div class="current-temperature-unit">°C</div>
+                </div>
             </div>
-            <div class="current-temperature">
-                <div id="icon" class="weather-icon">
-                    <img src="https://openweathermap.org/img/wn/04d@2x.png" alt="cloudy">
+
+            <div class="weather-forecast" id="forecast">
+                <!-- Forecast items populated dynamically -->
+
+                <div class="weather-forecast-day">
+                    <div class="weather-forecast-date">Mon</div>
+                    <img src="http://openweathermap.org/img/wn/13d@2x.png" alt="snow-day" class="weather-forecast-icon">
+
+                    <div class="weather-forecast-temperatures">
+                        <div class="weather-forecast-temperature">
+                            <strong>5°C</strong>
+                        </div> |
+                        <div class="weather-forecast-temperature">1°C</div>
+                    </div>
                 </div>
 
+                <!-- Forecast day 2 -->
 
-                <div class="current-temperature-value" id="temperature">22</div>
-                <div class="current-temperature-unit">°C</div>
+                <div class="forecast-day">
+                    <div class="weather-forecast-date">Tue</div>
+                    <img src="http://openweathermap.org/img/wn/01d@2x.png" alt="clear-sky-day"
+                        class="weather-forecast-icon">
+                    <div class="weather-forecast-temperatures">
+                        <div class="weather-forecast-temperature">
+                            <strong>8°C</strong>
+                        </div> |
+                        <div class="weather-forecast-temperature">2°C</div>
+                    </div>
+                </div>
             </div>
-        </div>
+        </main>
 
-        <div class="weather-forecast" id="forecast">
-            <!-- Forecast items populated dynamically -->
-            <div class="forecast-item">
-                <div class="weather-forecast-day">Mon</div>
-                <img src="http://openweathermap.org/img/wn/13d@2x.pn" alt="snow-day" class="weather-forecast-icon">☁️
-            </div>
-            <div class="weather-forecast-temperatures">
-                <div class="weather-forecast-temperature"><strong>5°C</strong></div> |
-                <div class="weather-forecast-temperature">1°C</div>
-            </div>
-        </div>
+        <footer>
+            This project was coded by
+            <a href="https://github.com/Jane0056/Weather-App-Project" target="_blank">Chioma Jane Agwuncha,</a>
+            is
 
-
-
-    </main>
+            <a href="https://github.com/Jane0056/Weather-App-Project" target="_blank"> open-source on GitHub</a>
+            and is
+            <a href="https://jane-weatherapp.netlify.app/" target="_blank">hosted on Netlify</a>
+            </p>
+        </footer>
+    </div>
 
 </body>
 
