@@ -181,7 +181,6 @@ main {
 .weather-forecast {
     display: flex;
     justify-content: space-around;
-    gap: 15px;
     margin-top: 30px;
 }
 
@@ -194,18 +193,19 @@ main {
     transform: translateY(-5px);
 }
 
+
 .weather-forecast-date {
-    font-size: 18px;
+    text-align: center;
+    font-size: 16px;
     line-height: 20px;
     margin-bottom: 10px;
 }
 
 .weather-forecast-icon {
-    width: 70px;
-    height: 70px;
+    width: 88px;
+    height: 88px;
     display: block;
     margin: 0 auto;
-    justify-content: center;
 }
 
 .weather-forecast-temperatures {
@@ -216,8 +216,9 @@ main {
     justify-content: center;
 }
 
+
 .weather-forecast-temperature {
-    padding: 0;
+    padding: 0 10px;
 }
 
 footer {
