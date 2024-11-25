@@ -239,3 +239,60 @@ footer a:hover {
     color: rgba(0, 0, 0, 0.6);
 }
 
+/* Responsive Styles */
+@media (max-width: 480px) {
+    .search-form {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .search-input,
+    .search-button {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .current-city {
+        font-size: 24px;
+    }
+
+    .current-temperature {
+        font-size: 36px;
+    }
+
+    .weather-forecast {
+        grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        background-size: contain;
+    }
+
+    .weather-app {
+        max-width: 500px;
+    }
+
+    .current-city {
+        font-size: 28px;
+    }
+
+    .current-temperature {
+        font-size: 48px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .weather-app {
+        max-width: 800px;
+    }
+
+    .current-city {
+        font-size: 42px;
+    }
+
+    .current-temperature {
+        font-size: 72px;
+    }
+}
