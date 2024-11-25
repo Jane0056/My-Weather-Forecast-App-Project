@@ -1,0 +1,24 @@
+* General Reset */ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", Arial, sans-serif;
+    height: 100vh;
+    background: linear-gradient(90deg, rgba(21, 74, 189, 0.8), rgba(26, 138, 211, 0.7)),
+        url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/151/362/original/360_F_641918542_bL3O5qWqKmaVrxM12Qa1pp1owFvKKP3k.jpg?1732486435");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-blend-mode: overlay;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    animation: moveClouds 30s linear infinite;
+}
