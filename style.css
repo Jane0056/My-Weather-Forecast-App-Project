@@ -227,19 +227,12 @@ footer {
     padding-top: 16px;
     text-align: center;
     font-size: 15px;
-    color: rgba(255, 255, 255, 0.6);
-}
-
-footer a {
-    color: #011429;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s;
+    color: white;
 }
 
 
 footer a:hover {
-    color: #0056b3;
+    color: white;
 }
 
 
