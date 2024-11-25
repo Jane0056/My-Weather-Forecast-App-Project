@@ -257,15 +257,12 @@ footer a:hover {
     }
 
     .current-temperature {
-        font-size: 36px;
-    }
-
-    .weather-forecast {
-        grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+        font-size: 48px;
     }
 }
 
 @media (max-width: 768px) {
+
     body {
         background-size: contain;
     }
