@@ -152,3 +152,26 @@ main {
     color: #ffcc00;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
+
+/*current-temperature*/
+
+.current-temperature {
+    display: flex;
+}
+
+.weather-icon img {
+    width: 88px;
+    height: 88px;
+}
+
+
+.current-temperature-value {
+    font-size: 88px;
+    line-height: 88px;
+    font-weight: bold;
+}
+
+.current-temperature-unit {
+    font-size: 28px;
+    margin-top: 6px;
+}
