@@ -19,9 +19,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
-    position: relative;
-    animation: moveClouds 30s linear infinite;
+    overflow: auto;
     padding: 20px;
 }
 
