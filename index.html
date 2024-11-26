@@ -34,6 +34,7 @@
                         Wind: <strong id="speed-details">15 km/h</strong>
                     </p>
                 </div>
+
                 <div class="current-temperature">
                     <div id="icon" class="weather-icon">
                         <img src="https://openweathermap.org/img/wn/04d@2x.png" alt="cloudy">
@@ -43,106 +44,92 @@
                 </div>
             </div>
 
-            <div class="weather-forecast" id="forecast"><!-- Forecast items populated dynamically -->
+            <div class="weather-forecast-container">
+                <div class="weather-forecast" id="forecast"><!-- Forecast items populated dynamically -->
+                    <div class="forecast-day">
+                        <div class="weather-forecast-date">Mon</div>
+                        <img src="http://openweathermap.org/img/wn/01d@2x.png" alt="clear-sky-day"
+                            class="weather-forecast-icon">
 
-                <div class="forecast-day">
-                    <div class="weather-forecast-date">Mon</div>
-                    <img src="http://openweathermap.org/img/wn/01d@2x.png" alt="clear-sky-day"
-                        class="weather-forecast-icon">
-
-                    <div class="weather-forecast-temperatures">
-                        <div class="weather-forecast-temperature">
-                            <strong>8°C</strong>
-                        </div> |
-                        <div class="weather-forecast-temperature">2°C</div>
+                        <div class="weather-forecast-temperatures">
+                            <div class="weather-forecast-temperature"><strong>8°C</strong>
+                            </div> |
+                            <div class="weather-forecast-temperature">2°C</div>
+                        </div>
                     </div>
-                </div>
 
-                <!-- Forecast day 2 -->
+                    <!-- Forecast day 2 -->
+                    <div class="forecast-day">
+                        <div class="weather-forecast-date">Tue</div>
+                        <img src="http://openweathermap.org/img/wn/13d@2x.png" alt="snow-day"
+                            class="weather-forecast-icon">
 
-                <div class="forecast-day">
-                    <div class="weather-forecast-date">Tue</div>
-                    <img src="http://openweathermap.org/img/wn/13d@2x.png" alt="snow-day" class="weather-forecast-icon">
-
-                    <div class="weather-forecast-temperatures">
-                        <div class="weather-forecast-temperature">
-                            <strong>8°C</strong>
-                        </div> |
-                        <div class="weather-forecast-temperature">2°C</div>
+                        <div class="weather-forecast-temperatures">
+                            <div class="weather-forecast-temperature"><strong>8°C</strong>
+                            </div> |
+                            <div class="weather-forecast-temperature">2°C</div>
+                        </div>
                     </div>
-                </div>
 
-                <!-- Forecast day 3 -->
+                    <!-- Forecast day 3 -->
+                    <div class="forecast-day">
+                        <div class="weather-forecast-date">Wed</div>
+                        <img src="http://openweathermap.org/img/wn/11n@2x.png" alt="thunderstorm-day"
+                            class="weather-forecast-icon">
 
-                <div class="forecast-day">
-                    <div class="weather-forecast-date">Wed</div>
-                    <img src="http://openweathermap.org/img/wn/11n@2x.png" alt="thunderstorm-day"
-                        class="weather-forecast-icon">
-
-                    <div class="weather-forecast-temperatures">
-                        <div class="weather-forecast-temperature">
-                            <strong>11°C</strong>
-                        </div> |
-                        <div class="weather-forecast-temperature">5°C</div>
+                        <div class="weather-forecast-temperatures">
+                            <div class="weather-forecast-temperature"><strong>11°C</strong>
+                            </div> |
+                            <div class="weather-forecast-temperature">5°C</div>
+                        </div>
                     </div>
-                </div>
 
-                <!-- Forecast day 4 -->
+                    <!-- Forecast day 4 -->
+                    <div class="forecast-day">
+                        <div class="weather-forecast-date">Thurs</div>
+                        <img src="http://openweathermap.org/img/wn/50n@2x.png" alt="mist-day"
+                            class="weather-forecast-icon">
 
-                <div class="forecast-day">
-                    <div class="weather-forecast-date">Thurs</div>
-                    <img src="http://openweathermap.org/img/wn/50n@2x.png" alt="mist-day" class="weather-forecast-icon">
-
-                    <div class="weather-forecast-temperatures">
-                        <div class="weather-forecast-temperature">
-                            <strong>-5°C</strong>
-                        </div> |
-                        <div class="weather-forecast-temperature">0°C</div>
+                        <div class="weather-forecast-temperatures">
+                            <div class="weather-forecast-temperature"><strong>-5°C</strong></div> |
+                            <div class="weather-forecast-temperature">0°C</div>
+                        </div>
                     </div>
-                </div>
 
-                <!-- Forecast day 5 -->
+                    <!-- Forecast day 5 -->
+                    <div class="forecast-day">
+                        <div class="weather-forecast-date">Fri</div>
+                        <img src="http://openweathermap.org/img/wn/09d@2x.png" alt="shower rain-day"
+                            class="weather-forecast-icon">
 
-                <div class="forecast-day">
-                    <div class="weather-forecast-date">Fri</div>
-                    <img src="http://openweathermap.org/img/wn/09d@2x.png" alt="shower rain-day"
-                        class="weather-forecast-icon">
-
-                    <div class="weather-forecast-temperatures">
-                        <div class="weather-forecast-temperature">
-                            <strong>5°C</strong>
-                        </div> |
-                        <div class="weather-forecast-temperature">1°C</div>
+                        <div class="weather-forecast-temperatures">
+                            <div class="weather-forecast-temperature"><strong>5°C</strong></div> |
+                            <div class="weather-forecast-temperature">1°C</div>
+                        </div>
                     </div>
-                </div>
 
-                <!-- Forecast day 6 -->
+                    <!-- Forecast day 6 -->
+                    <div class="forecast-day">
+                        <div class="weather-forecast-date">Sat</div>
+                        <img src="http://openweathermap.org/img/wn/02d@2x.png" alt="few clouds-day"
+                            class="weather-forecast-icon">
 
-                <div class="forecast-day">
-                    <div class="weather-forecast-date">Sat</div>
-                    <img src="http://openweathermap.org/img/wn/02d@2x.png" alt="few clouds-day"
-                        class="weather-forecast-icon">
-
-                    <div class="weather-forecast-temperatures">
-                        <div class="weather-forecast-temperature">
-                            <strong>5°C</strong>
-                        </div> |
-                        <div class="weather-forecast-temperature">1°C</div>
+                        <div class="weather-forecast-temperatures">
+                            <div class="weather-forecast-temperature"><strong>5°C</strong></div> |
+                            <div class="weather-forecast-temperature">1°C</div>
+                        </div>
                     </div>
-                </div>
 
-                <!-- Forecast day 7 -->
+                    <!-- Forecast day 7 -->
+                    <div class="forecast-day">
+                        <div class="weather-forecast-date">Sun</div>
+                        <img src="http://openweathermap.org/img/wn/03d@2x.png" alt="scattered clouds-day"
+                            class="weather-forecast-icon">
 
-                <div class="forecast-day">
-                    <div class="weather-forecast-date">Sun</div>
-                    <img src="http://openweathermap.org/img/wn/03d@2x.png" alt="scattered clouds-day"
-                        class="weather-forecast-icon">
-
-                    <div class="weather-forecast-temperatures">
-                        <div class="weather-forecast-temperature">
-                            <strong>5°C</strong>
-                        </div> |
-                        <div class="weather-forecast-temperature">1°C</div>
+                        <div class="weather-forecast-temperatures">
+                            <div class="weather-forecast-temperature"><strong>5°C</strong></div> |
+                            <div class="weather-forecast-temperature">1°C</div>
+                        </div>
                     </div>
                 </div>
             </div>
