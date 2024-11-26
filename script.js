@@ -61,3 +61,10 @@ function searchCity(city) {
     .then(weatherDetail)
     .catch((error) => console.error("Error fetching weather data:", error));
 }
+
+// Function to handle form submission
+function search(event) {
+  event.preventDefault();
+  let searchInputElement = document.querySelector("#search-input");
+  searchCity(searchInputElement.value.trim());
+}
