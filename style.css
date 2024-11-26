@@ -23,46 +23,19 @@ body {
     padding: 20px;
 }
 
-
-/* Animation Keyframes */
-@keyframes moveClouds {
-    0% {
-        background-position: 0 0;
-    }
-
-    100% {
-        background-position: 100% 0;
-    }
-}
-
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
 /* Weather App Container */
 .weather-app {
     background: rgba(255, 255, 255, 0.2);
-    max-width: 700px;
+    max-width: 900px;
     width: 100%;
-    margin: 45px auto;
+    margin: 20px auto;
     border-radius: 16px;
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
-    padding: 50px;
+    padding: 20px;
     border: 1px solid rgba(255, 255, 255, 0.3);
-    animation: fadeIn 1.5s ease-in-out;
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(4px);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
-
 
 .weather-app:hover {
     transform: translateY(-5px);
