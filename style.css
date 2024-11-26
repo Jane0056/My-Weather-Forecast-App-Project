@@ -149,6 +149,7 @@ header {
 /* Forecast Section */
 .weather-forecast-container {
     overflow-x: auto;
+    white-space: nowrap;
 }
 
 .weather-forecast {
@@ -156,13 +157,16 @@ header {
     justify-content: space-around;
     gap: 15px;
     margin-top: 10px;
+    flex-wrap: nowrap;
 }
+
 
 .forecast-day {
     border-radius: 8px;
     padding: 10px;
     text-align: center;
     min-width: 80px;
+    flex-shrink: 0;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -240,8 +244,6 @@ footer a:hover {
 
 @media (max-width: 768px) {
 
-
-
     .weather-app {
         max-width: 500px;
     }
@@ -260,11 +262,11 @@ footer a:hover {
 
     .weather-forecast {
         flex-wrap: nowrap;
-        gap: 10px;
+        overflow-x: auto;
     }
 
     .forecast-day {
-        min-width: 60px;
+        min-width: 70px;
         padding: 5px;
     }
 }
