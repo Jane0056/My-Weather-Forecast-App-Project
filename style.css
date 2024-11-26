@@ -8,8 +8,7 @@
 body {
     font-family: "Roboto", Arial, sans-serif;
     height: 100vh;
-    background: linear-gradient(120deg, rgba(21, 74, 189, 0.9), rgba(26, 138, 211, 0.7)),
-        url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/151/362/original/360_F_641918542_bL3O5qWqKmaVrxM12Qa1pp1owFvKKP3k.jpg?1732486435");
+    background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/151/362/original/360_F_641918542_bL3O5qWqKmaVrxM12Qa1pp1owFvKKP3k.jpg?1732486435");
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
