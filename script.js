@@ -25,4 +25,7 @@ function weatherDetail(response) {
   windSpeedElement.innerHTML = `${windSpeed} km/h`;
   temperatureElement.innerHTML = temperature;
   iconElement.innerHTML = `<img src="${iconUrl}" alt="${description}" class="weather-icon" />`;
+
+  // Call forecast function
+  getForecast(cityName);
 }
