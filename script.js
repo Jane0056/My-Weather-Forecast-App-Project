@@ -68,3 +68,10 @@ function search(event) {
   let searchInputElement = document.querySelector("#search-input");
   searchCity(searchInputElement.value.trim());
 }
+
+// Function to format day for forecast
+function formatDay(timestamp) {
+  let date = new Date(timestamp * 1000);
+  let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+  return days[date.getDay()];
+}
