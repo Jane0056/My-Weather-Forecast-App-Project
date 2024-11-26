@@ -51,3 +51,13 @@ function formatDate(date) {
 
   return `${day} ${hours}:${minutes}`;
 }
+
+// Function to fetch weather details for a city
+function searchCity(city) {
+  let apiKey = "0c0fc4d0af9a25bbb3ad3644ab6e153c";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`;
+  axios
+    .get(apiUrl)
+    .then(weatherDetail)
+    .catch((error) => console.error("Error fetching weather data:", error));
+}
