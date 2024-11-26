@@ -75,3 +75,12 @@ function formatDay(timestamp) {
   let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
   return days[date.getDay()];
 }
+
+// Function to get the weather forecast
+function getForecast(city) {
+  let apiKey = "0c0fc4d0af9a25bbb3ad3644ab6e153c";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=metric&appid=${apiKey}`;
+  axios(apiUrl)
+    .then(displayForecast)
+    .catch((error) => console.error("Error fetching forecast data:", error));
+}
