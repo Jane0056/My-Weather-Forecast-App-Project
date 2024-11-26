@@ -6,7 +6,6 @@ function weatherDetail(response) {
   let humidityElement = document.querySelector("#humidity-details");
   let windSpeedElement = document.querySelector("#speed-details");
   let timeElement = document.querySelector("#time");
-  let date = new Date(response.data.dt * 1000);
   let iconElement = document.querySelector("#icon");
 
   // Fetch data from the API response
@@ -16,6 +15,7 @@ function weatherDetail(response) {
   let humidity = response.data.main.humidity;
   let windSpeed = response.data.wind.speed;
   let iconUrl = `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`;
+  let date = new Date(response.data.dt * 1000);
 
   // Update elements with API data
   cityElement.innerHTML = cityName;
@@ -23,13 +23,12 @@ function weatherDetail(response) {
   descriptionElement.innerHTML = description;
   humidityElement.innerHTML = `${humidity}%`;
   windSpeedElement.innerHTML = `${windSpeed} km/h`;
-  temperatureElement.innerHTML = temperature;
+  temperatureElement.innerHTML = `${temperature}°C`;
   iconElement.innerHTML = `<img src="${iconUrl}" alt="${description}" class="weather-icon" />`;
 
   // Call forecast function
   getForecast(cityName);
 }
-
 // Function to format the date and time
 function formatDate(date) {
   let minutes = date.getMinutes();
@@ -43,6 +42,7 @@ function formatDate(date) {
     "Friday",
     "Saturday",
   ];
+
   let day = days[date.getDay()];
 
   if (minutes < 10) {

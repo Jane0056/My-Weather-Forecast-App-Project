@@ -151,9 +151,11 @@ header {
     overflow-x: auto;
 }
 
+
+
 .weather-forecast {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     gap: 15px;
     margin-top: 10px;
 }
@@ -172,21 +174,29 @@ header {
 }
 
 .weather-forecast-date {
-    font-size: 14px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 10px;
 }
 
 .weather-forecast-icon {
-    width: 50px;
-    height: 50px;
-    margin: 5px auto;
+    width: 88px;
+    height: 88px;
+    display: block;
+    margin: 0 auto;
 }
 
 .weather-forecast-temperatures {
-    display: flex;
-    justify-content: space-between;
-    gap: 5px;
-    font-size: 14px;
+    text-align: center;
     color: var(--highlight-color);
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.weather-forecast-temperature {
+    padding: 0 10px;
 }
 
 
