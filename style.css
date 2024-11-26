@@ -5,23 +5,35 @@
     box-sizing: border-box;
 }
 
+:root {
+    --primary-gradient-start: rgba(21, 74, 189, 0.9);
+    --primary-gradient-end: rgba(26, 138, 211, 0.7);
+    --highlight-color: #FFD700;
+    --text-light: #ffffff;
+    --text-muted: #dcdde1;
+    --background-blur: rgba(255, 255, 255, 0.2);
+    --shadow-color: rgba(0, 0, 0, 0.3);
+}
+
+/* Body Styling */
 body {
     font-family: "Roboto", Arial, sans-serif;
-    height: 100vh;
-    background: linear-gradient(120deg, rgba(21, 74, 189, 0.9), rgba(26, 138, 211, 0.7)),
+    min-height: 100vh;
+    background: linear-gradient(120deg, var(--primary-gradient-start), var(--primary-gradient-end)),
         url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/151/362/original/360_F_641918542_bL3O5qWqKmaVrxM12Qa1pp1owFvKKP3k.jpg?1732486435");
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
     background-size: cover;
     background-blend-mode: overlay;
-    color: #ffffff;
+    color: var(--text-light);
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: auto;
     padding: 20px;
 }
+
 
 /* Weather App Container */
 .weather-app {
