@@ -8,4 +8,12 @@ function weatherDetail(response) {
   let timeElement = document.querySelector("#time");
   let date = new Date(response.data.dt * 1000);
   let iconElement = document.querySelector("#icon");
+
+  // Fetch data from the API response
+  let temperature = Math.round(response.data.main.temp);
+  let cityName = response.data.name;
+  let description = response.data.weather[0].description;
+  let humidity = response.data.main.humidity;
+  let windSpeed = response.data.wind.speed;
+  let iconUrl = `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`;
 }
