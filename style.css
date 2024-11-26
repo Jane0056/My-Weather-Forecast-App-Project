@@ -34,15 +34,14 @@ body {
     padding: 20px;
 }
 
-
 /* Weather App Container */
 .weather-app {
-    background: rgba(255, 255, 255, 0.2);
+    background: var(--background-blur);
     max-width: 900px;
     width: 100%;
     margin: 20px auto;
     border-radius: 16px;
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 30px var(--shadow-color);
     padding: 20px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(4px);
@@ -58,7 +57,9 @@ header {
     margin-bottom: 20px;
 }
 
+
 /* Search Form */
+
 .search-form {
     display: flex;
     gap: 10px;
@@ -67,32 +68,37 @@ header {
 }
 
 .search-input {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: var(--background-blur);
     padding: 12px;
     font-size: 16px;
     border: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 8px;
     flex: 1;
-    color: #fff;
+    color: var(--text-light);
     outline: none;
     min-width: 200px;
+}
+
+.search-input:focus {
+    border-color: var(--highlight-color);
 }
 
 .search-button {
     padding: 12px 20px;
     font-size: 16px;
     background: linear-gradient(90deg, #1a8ad3, #0056b3);
-    color: #fff;
+    color: var(--text-light);
     border: none;
     border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.search-button:hover {
+.search-button:hover,
+.search-button:focus {
     background: #0056b3;
     transform: scale(1.05);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 12px var(--shadow-color);
 }
 
 /* Current Weather Section */
@@ -112,13 +118,13 @@ header {
 
 .current-weather-details {
     font-size: 16px;
-    line-height: 24px;
-    color: #dcdde1;
+    line-height: 1.5;
+    color: var(--text-muted);
     font-weight: 500;
 }
 
 .current-weather-details strong {
-    color: #FFD700;
+    color: var(--highlight-color);
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
@@ -180,7 +186,7 @@ header {
     justify-content: space-between;
     gap: 5px;
     font-size: 14px;
-    color: #FFD700;
+    color: var(--highlight-color);
 }
 
 
@@ -216,13 +222,16 @@ footer a:hover {
     .current-temperature {
         font-size: 48px;
     }
+
+    .forecast-day {
+        min-width: 60px;
+        padding: 5px;
+    }
 }
 
 @media (max-width: 768px) {
 
-    body {
-        background-size: contain;
-    }
+
 
     .weather-app {
         max-width: 500px;
@@ -262,5 +271,11 @@ footer a:hover {
 
     .current-temperature {
         font-size: 72px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .weather-app {
+        max-width: 1000px;
     }
 }
