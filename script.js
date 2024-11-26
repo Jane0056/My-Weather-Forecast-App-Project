@@ -84,3 +84,38 @@ function getForecast(city) {
     .then(displayForecast)
     .catch((error) => console.error("Error fetching forecast data:", error));
 }
+
+// Function to display the weather forecast
+function displayForecast(response) {
+  let forecastHtml = "";
+  let forecastList = response.data.list;
+
+  forecastList.forEach(function (forecastItem, index) {
+    if (index % 8 === 0) {
+      // Use only one forecast item per day (every 24 hours)
+      forecastHtml += `
+       <div class="weather-forecast-day">
+
+        <div class="weather-forecast-date">${formatDay(forecastItem.dt)}</div>
+        <img src="http://openweathermap.org/img/wn/${
+          forecastItem.weather[0].icon
+        }@2x.png" alt="${
+        forecastItem.weather[0].description
+      }" class="weather-forecast-icon" />
+
+      <div class="weather-forecast-temperatures">
+          <div class="weather-forecast-temperature">
+            <strong>${Math.round(forecastItem.main.temp_max)}º</strong>
+          </div>
+          <div class="weather-forecast-temperature">${Math.round(
+            forecastItem.main.temp_min
+          )}º</div>
+        </div>
+      </div>
+      `;
+    }
+  });
+
+  let forecastElement = document.querySelector("#forecast");
+  forecastElement.innerHTML = forecastHtml;
+}
