@@ -16,4 +16,13 @@ function weatherDetail(response) {
   let humidity = response.data.main.humidity;
   let windSpeed = response.data.wind.speed;
   let iconUrl = `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`;
+
+  // Update elements with API data
+  cityElement.innerHTML = cityName;
+  timeElement.innerHTML = formatDate(date);
+  descriptionElement.innerHTML = description;
+  humidityElement.innerHTML = `${humidity}%`;
+  windSpeedElement.innerHTML = `${windSpeed} km/h`;
+  temperatureElement.innerHTML = temperature;
+  iconElement.innerHTML = `<img src="${iconUrl}" alt="${description}" class="weather-icon" />`;
 }
