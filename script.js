@@ -15,7 +15,7 @@ function weatherDetail(response) {
   let humidity = response.data.main.humidity;
   let windSpeed = response.data.wind.speed;
   let iconUrl = `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`;
-  let date = new Date(response.data.dt * 1000);
+  let date = new Date();
 
   // Update elements with API data
   cityElement.innerHTML = cityName;
@@ -29,6 +29,7 @@ function weatherDetail(response) {
   // Call forecast function
   getForecast(cityName);
 }
+
 // Function to format the date and time
 function formatDate(date) {
   let minutes = date.getMinutes();

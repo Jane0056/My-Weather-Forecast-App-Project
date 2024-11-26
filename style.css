@@ -151,8 +151,6 @@ header {
     overflow-x: auto;
 }
 
-
-
 .weather-forecast {
     display: flex;
     justify-content: space-around;
@@ -191,6 +189,7 @@ header {
     text-align: center;
     color: var(--highlight-color);
     margin-top: 10px;
+    justify-content: space-between;
     display: flex;
     justify-content: center;
 }
